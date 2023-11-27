@@ -18,3 +18,5 @@ Projete e monte um circuito responsável por realizar uma contagem decimal da se
 
 ![image](https://github.com/BrunaDev/Contador-Sincrono/assets/72671246/12297868-1305-4aeb-a1fa-b0dc119a956b)
 
+Link de funcionamento: https://drive.google.com/file/d/1rFkpW_7IKZ-uCUlr4jH9LI8D_WovD7LD/view?usp=sharing
+
