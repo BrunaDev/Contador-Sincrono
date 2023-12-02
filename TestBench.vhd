@@ -2,10 +2,10 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   08:28:46 10/26/2022
+-- Create Date:   18:03:11 12/01/2023
 -- Design Name:   
--- Module Name:   D:/Documents/VHDL/ContadorAssincrono/TestBench.vhd
--- Project Name:  ContadorAssincrono
+-- Module Name:   E:/Dale/ProjetoLab/TestBench.vhd
+-- Project Name:  ProjetoLab
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
@@ -55,8 +55,6 @@ ARCHITECTURE behavior OF TestBench IS
  	--Outputs
    signal Output : integer range 0 to 7;
 
- 
- 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -66,16 +64,13 @@ BEGIN
           Output => Output
         );
 
-
- 
-
    -- Stimulus process
    stim_proc: process
    begin		
       
 		Reset <= '1';
       wait for 100 ns;
-      Reset <= '0';
+		Reset <= '0';
       wait for 100 ns;	
 
 
@@ -85,7 +80,6 @@ BEGIN
       wait for 100 ns;
 		Clock <= '0'; 
       wait for 100 ns;
-		
 
 		Clock <= '0'; 
       wait for 100 ns;	
@@ -94,62 +88,57 @@ BEGIN
 		Clock <= '0'; 
       wait for 100 ns;
 		  
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+		Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns;
+		
+	        Clock <= '0'; 
+      wait for 100 ns;	
+		Clock <= '1'; 
+      wait for 100 ns;
+		Clock <= '0'; 
+      wait for 100 ns; 
+		
 
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;
-		
-		
-		Clock <= '0'; 
-      wait for 100 ns;	
-		Clock <= '1'; 
-      wait for 100 ns;
-		Clock <= '0'; 
-      wait for 100 ns;		
-		
-      -- insert stimulus here 
-
-      wait;
+        wait;
    end process;
 
 END;
