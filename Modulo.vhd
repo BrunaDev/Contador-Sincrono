@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    15:12:44 11/27/2023 
+-- Create Date:    17:59:41 12/01/2023 
 -- Design Name: 
 -- Module Name:    Modulo - Behavioral 
 -- Project Name: 
@@ -58,13 +58,15 @@ begin
 		elsif Output = 3 then
 		   Output <= 1;
 		else
-		   Output <= 0
+		   Output <= 0;
 		end if; 
 		
 	elsif falling_edge(Clock) then
 	    Output <= Output;
 		 
 	end if;
+	
 end process; 
+
 
 end Behavioral;
